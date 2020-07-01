@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="css/productStyle.css">
+    <style media="screen">
+    #header-img {
+      display: flex;
+      max-width: 180px;
+      height: auto;
+      margin-right: 25rem;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 0px;
+      position: fixed;
+    }
+    @media screen and (max-width: 1600px) {
+    #header a {
+        float: none;
+        display: block;
+        text-align: left;
+        position: relative;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo-img">
+        <img id="header-img" src="https://cdn.shopify.com/s/files/1/1104/4168/t/930/assets/allbirds-logo-fb.jpg?v=9255317745661623995" alt="Comfort Shoes Company Logo">
+        <!--  <img id="header-img" src="images/logo.png" alt="Comfort Shoes Company Logo">-->
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a href="#description" class="nav-link">Product Details</a>
+          </li>
+          <li>
+           <a href="#pricing" class="nav-link">Product Price</a>
+          </li>
+          <li>
+           <a href="#learn-more" class="nav-link">Learn More</a>
+          </li>
+          <li>
+           <a href="#email" class="nav-link">Get Coupon</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1> All Birds </h1>
+    <div class="container">
+      <div class="row">
+      <div class="image-container">
+        <img src="images/Allbirds_1.jpeg" alt="Allbirds shoe image" class="product-image">
+      </div>
+      <div class="image-container">
+        <img src="images/Allbirds_2.jpeg" alt="Allbirds shoe image" class="product-image">
+      </div>
+      <div class="image-container">
+        <img src="images/Allbirds_3.jpeg" alt="Allbirds shoe image" class="product-image">
+      </div>
+      <section id="description">
+        <div class="box">
+          <p>CloudTec® in Helion™ superfoam gives the Cloudswift cushioning with zero compromises. Engineered for urban running, Helion™ is light on weight but big on energy return and durability.
+          Temperature resistant, it provides the same unrivaled performance in hot and cold conditions. Durable rubber reinforcements provide high traction at high speed, even on wet roads.</p>
+          </div>
+      </section>
+    </div>
+      <section id="pricing">
+        <div class="box">
+          <p><strong>Price:</strong></p>
+          <p>$150.00</p>
+        </div>
+      </section>
+      <section id="learn-more">
+        <p>Learn more about All Birds:</p>
+        <div>
+          <iframe width="424" height="238" src="https://www.youtube.com/embed/0FZZoY1NIXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+        </div>
+      </section>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <label for="email">Enter your email to recieve coupons</label>
+        <input type="email" name="email" id="email" class="form-field" placeholder="Enter your email" required>
+        <input type="submit" name="submit" value="Submit" class="form-field" id="submit">
+      </form>
+    </div>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
