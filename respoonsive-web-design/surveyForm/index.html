@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Star Trek Survey</title>
+    <link rel="stylesheet" href="css/surveyFormStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <header id="header">
+      <h1 id="title">Star Trek Survey Form</h1>
+      <p id="description">This is a survey where you can tell us your favorite Star Trek series and why</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-field">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" class="input-field" required>
+      </div>
+      <div class="form-field">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" class="input-field" required>
+      </div>
+      <div class="form-field">
+        <label for="number" id="number-label">Age <span>(Optional)</span></label>
+        <input type="number" name="age" id="number" placeholder="Enter your age" min="10" max="65" class="input-field">
+      </div>
+      <div class="form-field">
+        <p>Please select your favorite Star TrekSeries</p>
+        <select class="dropdown-select" name="series-dropdown" id="dropdown" required>
+          <option disabled selected value>Select your favorite series</option>
+          <option value="tos">The Original Series</option>
+          <option value="tng">The Next Generation</option>
+          <option value="ds9">Deep Space 9</option>
+          <option value="voyager">Voyager</option>
+          <option value="enterprise">Enterprise</option>
+          <option value="discovery">Discovery</option>
+          <option value="picard">Picard</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <p>Would you recommend Start Trek to your friends?</p>
+        <label for="definitely">
+          <input type="radio" name="recommend" value="definitely" id="definitely" checked>
+          Definitely
+        </label>
+        <label for="maybe">
+          <input type="radio" name="recommend" value="maybe" id="maybe">
+          Maybe
+        </label>
+        <label for="no">
+          <input type="radio" name="recommend" value="no" id="no">
+          No
+        </label>
+      </div>
+      <div class="form-field">
+        <p>Which Star Trek aliens do you like? <span>(Select atleast 3)</span></p>
+        <label><input type="checkbox" value="klingons" class="input-checkbox">Klingons</label>
+        <label><input type="checkbox" value="borg" class="input-checkbox">Borg</label>
+        <label><input type="checkbox" value="cardassians" class="input-checkbox">Cardassians</label>
+        <label><input type="checkbox" value="jem-hadar" class="input-checkbox">Jem'Hadar</label>
+        <label><input type="checkbox" value="changelings" class="input-checkbox">Changelings</label>
+        <label><input type="checkbox" value="kazon" class="input-checkbox">Kazon</label>
+        <label><input type="checkbox" value="vidiians" class="input-checkbox">Vidiians</label>
+        <label><input type="checkbox" value="vorta" class="input-checkbox">Vorta</label>
+        <label><input type="checkbox" value="orions" class="input-checkbox">Orions</label>
+        <label><input type="checkbox" value="xindi" class="input-checkbox">Xindi</label>
+        <label><input type="checkbox" value="sphere-builders" class="input-checkbox">Sphere Builders</label>
+        <label><input type="checkbox" value="wormhole-aliens" class="input-checkbox">Worhole Aliens</label>
+        <label><input type="checkbox" value="species-8472" class="input-checkbox">Species 8472</label>
+        <label><input type="checkbox" value="andorians" class="input-checkbox">Andorians</label>
+        <label><input type="checkbox" value="sphere-builders" class="input-checkbox">Sphere Builders</label>
+        <label><input type="checkbox" value="other" class="input-checkbox">Other (please specify)</label>
+      <input type="text" name="other" class="other-alien-text">
+      </div>
+      <div class="form-field">
+        <p>Mention your comments on Star Trek below, if any:</p>
+        <textarea id="comments" name="comment" placeholder="Enter your comments here.."></textarea>
+      </div>
+      <div class="form-field">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+    </main>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

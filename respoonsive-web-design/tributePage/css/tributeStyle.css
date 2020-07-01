@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  font-family: 'Lora', serif;
+  color: #8B0000;
+  font-size: 20px;
+  background: #FAEBD7;
+}
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+#img-div {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+figcaption {
+  display: block;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul {
+  text-align: left;
+}
